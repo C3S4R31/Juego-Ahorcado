@@ -1,0 +1,174 @@
+body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;   
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.botones-home, .botones-canvas, .botones-palabra{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    /* background: firebrick; */
+}
+
+.btn-iniciar, .btn-palabra, .btn-nuevo, .btn-desistir, .btn-guardar, .btn-cancelar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.btn-iniciar{
+    max-width: 400px;
+    width: 30%;
+    height: 10%; 
+    background: #0A3871;
+    color: #FFFFFF;         
+}
+.btn-iniciar:hover{
+    transform: scale(1.1,1.1);
+}
+
+.btn-palabra{
+    max-width: 350px;
+    width: 25%;
+    height: 8%; 
+    border: 2px solid #0A3871;
+    background: none;
+    color: #0A3871;    
+}
+.btn-palabra:hover{
+    transform: scale(1.1,1.1);
+}
+
+/*========================================================================*/
+.canvas{
+    width: 100%;
+    height: 0%;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: royalblue; */
+}
+
+#forca{
+    width: 90%;
+    height: 85%;
+    /* border: 2px solid black; */
+}
+
+.botones-canvas{
+    height: 15%;
+    flex-direction: row;
+}
+
+.btn-nuevo{
+    width: 30%;
+    height: 50%;
+    background: #0A3871;
+    color: #FFFFFF;
+}
+.btn-nuevo:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+.btn-desistir{
+    width: 30%;
+    height: 50%;
+    border: 2px solid #0A3871;
+    background: none;
+    color: #0A3871; 
+}
+.btn-desistir:hover{
+    transform: scale(1.1,1.1);
+}
+
+/*========================================================================*/
+
+.div-palabra{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#texto{
+    width: 60%;
+    height: 20%;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: none;
+}
+#texto::placeholder{
+    text-transform: none;
+}
+
+.info{
+    width: 65%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    color: #495057;
+}
+
+.botones-palabra{
+    height: 15%;   
+    flex-direction: row;
+    /* background: red;  */
+}
+
+.btn-guardar{
+    width: 30%;
+    height: 50%;
+    background: #0A3871;
+    color: #FFFFFF;        
+}
+.btn-guardar:hover{
+    transform: scale(1.1,1.1);
+}
+
+.btn-cancelar{
+    width: 30%;
+    height: 50%;
+    border: 2px solid #0A3871;
+    background: none;
+    color: #0A3871;       
+}
+.btn-cancelar:hover{
+    transform: scale(1.1,1.1);
+}

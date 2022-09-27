@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado - Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="logo" src="imagenes/Logo.svg" alt="Logo-Alura">
+    <div id="div-desaparece" class="botones-home">
+        <input class="btn-iniciar" type="submit" value="Iniciar Juego" id="iniciar-juego" onclick="iniciarJuego()">
+        <input class="btn-palabra" type="submit" value="Agregar Palabra" id="iniciar-palabra" onclick="agregarJuego()">
+    </div>
+
+    <div id="div-aparece-ahorcado" class="canvas">
+        <!-- Canvas -->
+        <canvas id="forca"></canvas>
+        <div class="botones-canvas">
+            <input class="btn-nuevo" type="submit" value="Nuevo juego" onclick="iniciarJuego()">
+            <input class="btn-desistir" type="submit" value="Desistir" onclick="salirJuego()">
+        </div>
+    </div>
+
+    <div id="div-aparece-palabra" class="div-palabra">
+        <input type="text" id="texto" placeholder="Ingrese palabra" maxlength="8" autocomplete="off"></input>
+        <p class="info">&#128712 Max. de 8 letras</p>
+        <div class="botones-palabra">
+            <input type="submit" class="btn-guardar" value="Guardar" onclick="guardarPalabra()">
+            <input type="submit" class="btn-cancelar" value="Cancelar" onclick="salirJuego()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="canvas.js"></script>
+</body>
+</html>
